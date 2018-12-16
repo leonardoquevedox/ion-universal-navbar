@@ -21,14 +21,14 @@ import { ViewChild } from '@angular/core'
 export class IonUniversalNavbar {
 
     @Input('options') options: any = {
+        pages: [],
+        hide: false,
         sidemenu: { heading: '' },
         tabs: {
             layout: 'icon-top',
             placement: 'bottom',
             selectedIndex: 0
-        },
-        pages: [],
-        hide: false
+        }
     }
 
     @ViewChild('tabs') tabs: any
