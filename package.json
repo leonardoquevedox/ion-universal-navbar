@@ -1,6 +1,6 @@
 {
     "name": "ion-universal-navbar",
-    "version": "0.9.9",
+    "version": "0.9.3",
     "description": "Simple authentication state handler for Angular.io.",
     "main": "index.js",
     "scripts": {
@@ -31,7 +31,14 @@
     "homepage": "https://github.com/leopq/ion-universal-navbar#readme",
     "dependencies": {
         "@angular/common": "^7.1.3",
-        "@angular/core": "^7.1.3"
+        "@angular/compiler": "^7.1.3",
+        "@angular/compiler-cli": "^7.1.3",
+        "@angular/core": "^7.1.3",
+        "@angular/forms": "^7.1.3",
+        "@angular/http": "^7.1.3",
+        "@angular/platform-browser": "^7.1.3",
+        "@angular/platform-browser-dynamic": "^7.1.3",
+        "ionic-angular": "^3.9.2"
     },
     "devDependencies": {
         "@angular/compiler": "^7.1.3",

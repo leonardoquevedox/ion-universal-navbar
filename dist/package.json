@@ -1,29 +1,32 @@
 {
-  "name": "ngx-bank-account-br",
-  "version": "0.9.1",
-  "description": "Address autocomplete directive for Angular.io (2+).",
-  "main": "bundles/ngx-bank-account-br.umd.js",
+  "name": "ion-universal-navbar",
+  "version": "0.9.3",
+  "description": "Simple authentication state handler for Angular.io.",
+  "main": "bundles/ion-universal-navbar.umd.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leopq/ngx-bank-account-br.git"
+    "url": "git+https://github.com/leopq/ion-universal-navbar.git"
   },
   "keywords": [
     "angular",
-    "directive",
-    "ngx",
-    "dynamic",
-    "mask"
+    "handler",
+    "ngx"
   ],
   "author": "Leonardo Quevedo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leopq/ngx-bank-account-br/issues"
+    "url": "https://github.com/leopq/ion-universal-navbar/issues"
   },
-  "homepage": "https://github.com/leopq/ngx-bank-account-br#readme",
+  "homepage": "https://github.com/leopq/ion-universal-navbar#readme",
   "dependencies": {
     "@angular/common": "^7.1.3",
+    "@angular/compiler": "^7.1.3",
+    "@angular/compiler-cli": "^7.1.3",
     "@angular/core": "^7.1.3",
     "@angular/forms": "^7.1.3",
+    "@angular/http": "^7.1.3",
+    "@angular/platform-browser": "^7.1.3",
+    "@angular/platform-browser-dynamic": "^7.1.3",
     "ionic-angular": "^3.9.2",
     "tslib": "^1.9.0"
   },
@@ -34,13 +37,13 @@
     "tsickle": "^0.34.0",
     "typescript": "3.1.1"
   },
-  "module": "fesm5/ngx-bank-account-br.js",
-  "es2015": "fesm2015/ngx-bank-account-br.js",
-  "esm5": "esm5/ngx-bank-account-br.js",
-  "esm2015": "esm2015/ngx-bank-account-br.js",
-  "fesm5": "fesm5/ngx-bank-account-br.js",
-  "fesm2015": "fesm2015/ngx-bank-account-br.js",
-  "typings": "ngx-bank-account-br.d.ts",
-  "metadata": "ngx-bank-account-br.metadata.json",
+  "module": "fesm5/ion-universal-navbar.js",
+  "es2015": "fesm2015/ion-universal-navbar.js",
+  "esm5": "esm5/ion-universal-navbar.js",
+  "esm2015": "esm2015/ion-universal-navbar.js",
+  "fesm5": "fesm5/ion-universal-navbar.js",
+  "fesm2015": "fesm2015/ion-universal-navbar.js",
+  "typings": "ion-universal-navbar.d.ts",
+  "metadata": "ion-universal-navbar.metadata.json",
   "sideEffects": false
 }

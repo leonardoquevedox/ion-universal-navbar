@@ -12,16 +12,26 @@ import { Injectable } from '@angular/core'
 import { ViewChild } from '@angular/core'
 
 @Component({
-    selector: 'ion-universal-nav',
-    templateUrl: 'ion-universal-nav.component.html',
-    styleUrls: ['ion-universal-nav.component.scss']
+    selector: 'ion-universal-navbar',
+    templateUrl: 'ion-universal-navbar.component.html',
+    styleUrls: ['ion-universal-navbar.component.scss']
 })
 
 @Injectable()
-export class IonUniversalNav {
+export class IonUniversalNavbar {
+
+    @Input('options') options: any = {
+        sidemenu: { heading: '' },
+        tabs: {
+            layout: 'icon-top',
+            placement: 'bottom',
+            selectedIndex: 0
+        },
+        pages: [],
+        hide: false
+    }
 
     @ViewChild('tabs') tabs: any
-    @Input('options') options: any
 
     isFirstTabSelect: boolean = true
     scrollLeft: boolean
@@ -53,7 +63,7 @@ export class IonUniversalNav {
         })
     }
 
-    screenIsDesktopSized() {
+    isDesktop() {
         return window.innerWidth > 768
     }
 

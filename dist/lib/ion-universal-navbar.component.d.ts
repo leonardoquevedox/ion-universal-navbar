@@ -2,13 +2,13 @@
  * @license MIT
  * @version 1.1.0
  * @author Leonardo Quevedo
- * @description Responsive navbar component.
+ * @description universal navbar component.
  */
 import { App } from 'ionic-angular';
-export declare class IonNavTransformer {
+export declare class IonUniversalNavbar {
     private app;
-    tabs: any;
     options: any;
+    tabs: any;
     isFirstTabSelect: boolean;
     scrollLeft: boolean;
     lastView: any;
@@ -16,6 +16,6 @@ export declare class IonNavTransformer {
     ngOnInit(): void;
     hideModalOnBack(): void;
     fixTabSelect(): void;
-    screenIsDesktopSized(): boolean;
+    isDesktop(): boolean;
     toggleDrawer(): void;
 }

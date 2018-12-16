@@ -1,1 +1,2 @@
-export * from './ion-nav-transformer.module';
+export { IonUniversalNavbar } from './lib/ion-universal-navbar.component';
+export { IonUniversalNavbarModule } from './lib/ion-universal-navbar.module';

@@ -1,18 +1,21 @@
-$shrinked-navbar-width: $navbar-md-height;
-$item-height: $navbar-md-height;
+$primary: #00FF00;
+$navbar-width: 280px;
+$shrinked-navbar-width: 56px;
+$item-height: 56px;
 $border-radius: 10px;
 $navbar-background-color: white;
 $navbar-text-color: white;
-/* $ads-width: 188px; */
+
+@import './mixins.scss';
 
 ion-navbar[color=primary] .toolbar-background.toolbar-background-md,
 ion-navbar[color=primary] .toolbar-background.toolbar-background-ios,
-mars-navbar [header] {
+ion-universal-navbar [header] {
     @include primary-gradient();
 }
 
 $ads-width: 0px;
-mars-navbar {
+ion-universal-navbar {
     height: auto;
     display: block;
     z-index: 100;
@@ -26,7 +29,7 @@ mars-navbar {
         width: 100vw;
         height: 100vw;
         [header] {
-            @include secondary-gradient();
+            @include primary-gradient();
             height:calc(#{$item-height} - 0px);
             width: calc(#{$navbar-width});
             font-size: 16px;
@@ -53,7 +56,7 @@ mars-navbar {
             bottom: 20px;
             max-width: $navbar-width;
             [footer-text] {
-                color: $light;
+                color: #efefef;
                 width: $navbar-width;
                 text-align: center;
             }
@@ -71,7 +74,7 @@ mars-navbar {
             max-width: calc(100vw - #{$navbar-width} - #{$ads-width});
             background-color: $navbar-background-color;
             .scroll-content {
-                margin-bottom: 0px !important;
+                margin-bottom: 0px;
             }
             ion-title {
                 text-align: center;
@@ -88,7 +91,6 @@ mars-navbar {
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             padding: 10px;
-            /* padding: 10px; */
             * {
                 transition-property: all;
                 transition-duration: .25s;
@@ -126,7 +128,7 @@ mars-navbar {
                 padding: 10px;
                 padding-top: 5px;
                 font-weight: bold;
-                @include secondary-gradient();
+                @include primary-gradient();
                 box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
                 span.tab-button-text,
                 ion-icon.tab-button-icon {
@@ -147,28 +149,11 @@ mars-navbar {
             }
         }
     }
-    [ads-bar-wrapper] {
-        position: absolute;
-        top: -1px;
-        right: 2px;
-        width: $ads-width;
-        height: 100vh;
-        [ads-bar] {
-            /* border: 1px solid #efefef; */
-            height: 100%;
-            width: 100%;
-            background: url(https://lh4.ggpht.com/ike-jviZQ32RHuhkwLcAt_9vdpBX1oWKU00NX7QRe5GPl7-5sapzZ0u91_ssg_-Ednak2Hj-Hg=w162);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right;
-        }
-    }
 }
 
 @media(max-width: 768px) {
     ion-tabs {
         .tabbar {
-            /*  background: $secondary !important; */
             transition-property: all;
             transition-duration: .35s;
             .tab-button {
@@ -202,21 +187,7 @@ mars-navbar {
         ion-tab {
             .scroll-content,
             .fixed-content {
-                margin-bottom: 0px !important;
-            }
-        }
-    }
-    .ios {
-        ion-tab {
-            .scroll-content {
-                margin-bottom: $navbar-ios-height !important;
-            }
-        }
-    }
-    .md {
-        ion-tab {
-            .scroll-content {
-                margin-bottom: $navbar-md-height !important;
+                margin-bottom: 0px;
             }
         }
     }

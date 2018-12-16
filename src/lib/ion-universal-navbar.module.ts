@@ -7,11 +7,11 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { IonicModule } from 'ionic-angular'
-import { IonUniversalNav } from './ion-universal-nav.component'
+import { IonUniversalNavbar } from './ion-universal-navbar.component'
 
 @NgModule({
-    imports: [IonicModule, CommonModule],
-    declarations: [IonUniversalNav],
-    exports: [IonUniversalNav]
+    imports: [CommonModule, IonicModule],
+    declarations: [IonUniversalNavbar],
+    exports: [IonUniversalNavbar]
 })
-export class IonUniversalNavModule { }
+export class IonUniversalNavbarModule { }

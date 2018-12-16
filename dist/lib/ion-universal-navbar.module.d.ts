@@ -3,5 +3,5 @@
  * @author Leonardo Quevedo
  * @description Component module.
  */
-export declare class IonNavTransformerModule {
+export declare class IonUniversalNavbarModule {
 }

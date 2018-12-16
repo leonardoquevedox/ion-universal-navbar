@@ -1,6 +1,6 @@
-# Ngx-credit-card-br
+# Ion-universal-navbar
 
-> Ngx-credit-card-br is an ultra simple cnpj validator for Angular.io.
+> Ion-universal-navbar is an ultra simple cnpj validator for Angular.io.
 
 [![basic-merchandising](https://imgur.com/LNOYczf.png)](https://github.com/leopq)
 
@@ -19,14 +19,14 @@ $ npm install --save ion-universal-nav
 Import **ion-universal-nav** module in Angular app.
 
 ```typescript
-import { IonUniversalNavModule } from 'ion-universal-nav'
+import { IonUniversalNavbarModule } from 'ion-universal-nav'
 
 (...)
 
 @NgModule({
   (...)
   imports: [
-    IonUniversalNavModule.forRoot()
+    IonUniversalNavbarModule.forRoot()
   ]
   (...)
 })
