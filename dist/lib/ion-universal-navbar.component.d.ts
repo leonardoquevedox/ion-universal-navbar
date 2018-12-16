@@ -18,4 +18,6 @@ export declare class IonUniversalNavbar {
     fixTabSelect(): void;
     isDesktop(): boolean;
     toggleDrawer(): void;
+    appendStyles(): void;
+    getLinearGradient(color: any): string;
 }

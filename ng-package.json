@@ -2,11 +2,13 @@
     "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
     "whitelistedNonPeerDependencies": [
         "angular",
-        "ionic-angular"
+        "ionic-angular",
+        "color"
     ],
     "lib": {
         "umdModuleIds": {
-            "ionic-angular": "ionicAngular"
+            "ionic-angular": "ionicAngular",
+            "color": "_color"
         },
         "entryFile": "./src/public_api.ts"
     }

@@ -1,67 +1,68 @@
-$primary: #00FF00;
 $navbar-width: 280px;
-$shrinked-navbar-width: 56px;
 $item-height: 56px;
-$border-radius: 10px;
 $navbar-background-color: white;
-$navbar-text-color: white;
-@import './mixins.scss';
-ion-navbar[color=primary] .toolbar-background.toolbar-background-md,
-ion-navbar[color=primary] .toolbar-background.toolbar-background-ios,
-:host [header] {
-    @include primary-gradient();
-}
-
-:host {
-    height: auto;
-    display: block;
-    z-index: 100;
+ion-universal-navbar {
+    ion-tabs.tabs {
+        ion-tab {
+            .ion-page {
+                ion-content.content {
+                    .scroll-content {
+                        margin-bottom: 0px !important;
+                    }
+                }
+            }
+        }
+    }
     .disable-navigation {
         .tabbar * {
             pointer-events: none;
             opacity: 0.5;
         }
     }
-    .drawer {
-        width: 100vw;
-        height: 100vw;
-        [header] {
-            @include primary-gradient();
-            height:calc(#{$item-height} - 0px);
-            width: calc(#{$navbar-width});
-            font-size: 16px;
-            font-weight: 400;
-            color: white;
-            margin-right: 2px;
-            padding-top: 16px;
-            border: none;
-            cursor: pointer;
-            position: absolute;
-            z-index: 999999;
-            margin-bottom: -2px;
-            border-color: $primary;
-            margin-right: -2px;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-            ion-icon {
-                vertical-align: middle;
-                font-size: 20px;
-                margin-left: 5px;
+}
+
+/* Desktop view */
+
+@media(min-width: 768px) {
+    ion-universal-navbar {
+        height: auto;
+        display: block;
+        z-index: 100;
+        .drawer {
+            width: 100vw;
+            height: 100vw;
+            [header] {
+                height:calc(#{$item-height} - 0px);
+                width: calc(#{$navbar-width});
+                font-size: 16px;
+                font-weight: 400;
+                color: white;
+                margin-right: 2px;
+                padding-top: 16px;
+                border: none;
+                cursor: pointer;
+                position: absolute;
+                z-index: 999999;
+                margin-bottom: -2px;
+                border: none;
+                margin-right: -2px;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+                ion-icon {
+                    vertical-align: middle;
+                    font-size: 20px;
+                    margin-left: 5px;
+                }
             }
-        }
-        [footer] {
-            position: fixed;
-            bottom: 20px;
-            max-width: $navbar-width;
-            [footer-text] {
-                color: #efefef;
-                width: $navbar-width;
-                text-align: center;
+            [footer] {
+                position: fixed;
+                bottom: 20px;
+                max-width: $navbar-width;
+                [footer-text] {
+                    color: #efefef;
+                    width: $navbar-width;
+                    text-align: center;
+                }
             }
-        }
-    }
-    @media(min-width: 768px) {
-        ion-navbar {
-            border-left: 1px solid $primary;
         }
         ion-tabs.tabs {
             ion-tab {
@@ -123,7 +124,6 @@ ion-navbar[color=primary] .toolbar-background.toolbar-background-ios,
                     padding: 10px;
                     padding-top: 5px;
                     font-weight: bold;
-                    @include primary-gradient();
                     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
                     span.tab-button-text,
                     ion-icon.tab-button-icon {
@@ -145,7 +145,12 @@ ion-navbar[color=primary] .toolbar-background.toolbar-background-ios,
             }
         }
     }
-    @media(max-width: 768px) {
+}
+
+/* Mobile view */
+
+@media(max-width: 768px) {
+    ion-universal-navbar {
         ion-tabs {
             .tabbar {
                 transition-property: all;
@@ -158,12 +163,6 @@ ion-navbar[color=primary] .toolbar-background.toolbar-background-ios,
                         color: rgba(0, 0, 0, 0.4);
                         &:before {
                             font-size: 30px;
-                        }
-                    }
-                    &[aria-selected=true] {
-                        .tab-button-icon,
-                        .tab-button-text {
-                            color: lighten($primary, 10%);
                         }
                     }
                 }
