@@ -1,0 +1,13 @@
+<nav [ngClass]="{ 'drawer': screenIsDesktopSized(), 'scroll-left': scrollLeft, 'disable-navigation': options.disableNavigation }">
+    <section (click)="toggleDrawer()" header text-center *ngIf="screenIsDesktopSized()">
+        <span title>
+            {{options.sidemenu.heading}}
+        </span>
+    </section>
+    <ion-tabs [attr.hide]="options.hide" name="ion-tabs" id="ion-tabs" tabsHighlight="tabsHighlight"
+        tabsLayout="icon-top" tabsPlacement="bottom" [selectedIndex]="options.selectedIndex || 0" #tabs>
+        <ion-tab *ngFor="let tab of options.pages" [root]="tab.getRoot()" [rootParams]="tab.getRootParams()"
+            [tabTitle]="tab.getTitle()" [tabUrlPath]="tab.getUrlPath()" [tabIcon]="tab.getIcon()" [tabBadge]="tab.getBadge()"
+            [show]="tab.canShow()"></ion-tab>
+    </ion-tabs>
+</nav>

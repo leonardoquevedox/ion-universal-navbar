@@ -1,0 +1,46 @@
+{
+  "name": "ngx-bank-account-br",
+  "version": "0.9.1",
+  "description": "Address autocomplete directive for Angular.io (2+).",
+  "main": "bundles/ngx-bank-account-br.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leopq/ngx-bank-account-br.git"
+  },
+  "keywords": [
+    "angular",
+    "directive",
+    "ngx",
+    "dynamic",
+    "mask"
+  ],
+  "author": "Leonardo Quevedo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leopq/ngx-bank-account-br/issues"
+  },
+  "homepage": "https://github.com/leopq/ngx-bank-account-br#readme",
+  "dependencies": {
+    "@angular/common": "^7.1.3",
+    "@angular/core": "^7.1.3",
+    "@angular/forms": "^7.1.3",
+    "ionic-angular": "^3.9.2",
+    "tslib": "^1.9.0"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^7.1.3",
+    "@angular/compiler-cli": "^7.1.3",
+    "ng-packagr": "^4.4.5",
+    "tsickle": "^0.34.0",
+    "typescript": "3.1.1"
+  },
+  "module": "fesm5/ngx-bank-account-br.js",
+  "es2015": "fesm2015/ngx-bank-account-br.js",
+  "esm5": "esm5/ngx-bank-account-br.js",
+  "esm2015": "esm2015/ngx-bank-account-br.js",
+  "fesm5": "fesm5/ngx-bank-account-br.js",
+  "fesm2015": "fesm2015/ngx-bank-account-br.js",
+  "typings": "ngx-bank-account-br.d.ts",
+  "metadata": "ngx-bank-account-br.metadata.json",
+  "sideEffects": false
+}
