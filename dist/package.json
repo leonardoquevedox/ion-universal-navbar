@@ -1,6 +1,6 @@
 {
   "name": "ion-universal-navbar",
-  "version": "0.9.3",
+  "version": "0.9.5",
   "description": "Simple authentication state handler for Angular.io.",
   "main": "bundles/ion-universal-navbar.umd.js",
   "repository": {
