@@ -145,7 +145,6 @@ IonUniversalNavbar.decorators = [
             }] },
     { type: Injectable }
 ];
-/** @nocollapse */
 IonUniversalNavbar.ctorParameters = () => [
     { type: App }
 ];

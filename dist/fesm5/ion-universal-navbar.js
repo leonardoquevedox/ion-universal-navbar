@@ -129,7 +129,6 @@ var IonUniversalNavbar = /** @class */ (function () {
                 }] },
         { type: Injectable }
     ];
-    /** @nocollapse */
     IonUniversalNavbar.ctorParameters = function () { return [
         { type: App }
     ]; };

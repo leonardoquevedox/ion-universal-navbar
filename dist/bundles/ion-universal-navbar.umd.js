@@ -10,7 +10,7 @@
      */
     /** @type {?} */
     var Color = _color;
-    var IonUniversalNavbar = /** @class */ (function () {
+    var IonUniversalNavbar = (function () {
         function IonUniversalNavbar(app) {
             this.app = app;
             this.options = {
@@ -130,7 +130,6 @@
                     }] },
             { type: core.Injectable }
         ];
-        /** @nocollapse */
         IonUniversalNavbar.ctorParameters = function () {
             return [
                 { type: ionicAngular.App }
@@ -147,7 +146,7 @@
      * @fileoverview added by tsickle
      * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var IonUniversalNavbarModule = /** @class */ (function () {
+    var IonUniversalNavbarModule = (function () {
         function IonUniversalNavbarModule() {
         }
         IonUniversalNavbarModule.decorators = [

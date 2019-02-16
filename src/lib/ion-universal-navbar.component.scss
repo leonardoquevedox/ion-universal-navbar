@@ -1,5 +1,5 @@
-$navbar-width: 280px;
-$item-height: 56px;
+$navbar-width: 28rem;
+$item-height: 5.6rem;
 $navbar-background-color: white;
 ion-universal-navbar {
     ion-tabs.tabs {
@@ -7,7 +7,7 @@ ion-universal-navbar {
             .ion-page {
                 ion-content.content {
                     .scroll-content {
-                        margin-bottom: 0px !important;
+                        margin-bottom: 0rem !important;
                     }
                 }
             }
@@ -34,28 +34,28 @@ ion-universal-navbar {
             [header] {
                 height:calc(#{$item-height} - 0px);
                 width: calc(#{$navbar-width});
-                font-size: 16px;
+                font-size: 1.6rem;
                 font-weight: 400;
                 color: white;
-                margin-right: 2px;
-                padding-top: 16px;
+                margin-right: 0.2rem;
+                padding-top: 1.6rem;
                 border: none;
                 cursor: pointer;
                 position: absolute;
                 z-index: 999999;
-                margin-bottom: -2px;
+                margin-bottom: -0.2rem;
                 border: none;
-                margin-right: -2px;
-                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+                margin-right: -0.2rem;
+                box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.2);
                 ion-icon {
                     vertical-align: middle;
-                    font-size: 20px;
-                    margin-left: 5px;
+                    font-size: 2rem;
+                    margin-left: 0.5rem;
                 }
             }
             [footer] {
                 position: fixed;
-                bottom: 20px;
+                bottom: 2rem;
                 max-width: $navbar-width;
                 [footer-text] {
                     color: #efefef;
@@ -66,11 +66,11 @@ ion-universal-navbar {
         }
         ion-tabs.tabs {
             ion-tab {
-                left: calc(0px + #{$navbar-width});
+                left: calc(0rem + #{$navbar-width});
                 max-width: calc(100vw - #{$navbar-width});
                 background-color: $navbar-background-color;
                 .scroll-content {
-                    margin-bottom: 0px;
+                    margin-bottom: 0rem;
                 }
                 ion-title {
                     text-align: center;
@@ -81,12 +81,12 @@ ion-universal-navbar {
                 max-width: $navbar-width;
                 position: relative;
                 top: $item-height;
-                box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+                box-shadow: 1px 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
                 height: 100vh;
                 background-color: $navbar-background-color;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
-                padding: 10px;
+                border-bottom-left-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+                padding: 1rem;
                 * {
                     transition-property: all;
                     transition-duration: .25s;
@@ -95,36 +95,36 @@ ion-universal-navbar {
             a.tab-button {
                 text-align: left;
                 display: block;
-                padding: 10px;
-                padding-top: 5px;
+                padding: 1rem;
+                padding-top: 0.5rem;
                 max-width: 999px;
-                border-radius: 30px;
+                border-radius: 3rem;
                 background: white;
-                margin-bottom: 10px;
+                margin-bottom: 1rem;
                 .tab-button-text,
                 .tab-button-icon {
                     vertical-align: middle;
                     color: #888;
                     display: inline-block;
-                    margin-left: 10px;
+                    margin-left: 1rem;
                 }
                 .tab-button-icon:before {
-                    font-size: 27px;
+                    font-size: 2.7rem;
                 }
                 .tab-button-text {
-                    padding: 10px;
-                    padding-left: 0px;
+                    padding: 1rem;
+                    padding-left: 0rem;
                 }
                 .tab-badge {
-                    left: 32px;
-                    top: 12px;
-                    padding-top: 2px;
+                    left: 3.2rem;
+                    top: 1.2rem;
+                    padding-top: 0.2rem;
                 }
                 &[aria-selected=true] {
-                    padding: 10px;
-                    padding-top: 5px;
+                    padding: 1rem;
+                    padding-top: 0.5rem;
                     font-weight: bold;
-                    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+                    box-shadow: 0rem 0rem 0.4rem rgba(0, 0, 0, 0.4);
                     span.tab-button-text,
                     ion-icon.tab-button-icon {
                         transform: none;
@@ -133,10 +133,10 @@ ion-universal-navbar {
                 }
                 &[aria-selected=true],
                 &:hover {
-                    padding-left: 75px;
+                    padding-left: 7.5rem;
                     opacity: 1;
                     .tab-badge {
-                        margin-left: 66px;
+                        margin-left: 6.6rem;
                     }
                 }
                 &.tab-hidden {
@@ -162,14 +162,14 @@ ion-universal-navbar {
                     .tab-button-icon {
                         color: rgba(0, 0, 0, 0.4);
                         &:before {
-                            font-size: 30px;
+                            font-size: 3rem;
                         }
                     }
                 }
                 .tab-badge {
-                    padding-top: 3px;
-                    margin-top: 16px;
-                    margin-right: 16px;
+                    padding-top: 0.3rem;
+                    margin-top: 1.6rem;
+                    margin-right: 1.6rem;
                 }
             }
         }
@@ -180,7 +180,7 @@ ion-universal-navbar {
             ion-tab {
                 .scroll-content,
                 .fixed-content {
-                    margin-bottom: 0px;
+                    margin-bottom: 0rem;
                 }
             }
         }

@@ -26,7 +26,7 @@ import { IonUniversalNavbarModule } from 'ion-universal-nav'
 @NgModule({
   (...)
   imports: [
-    IonUniversalNavbarModule.forRoot()
+    IonUniversalNavbarModule
   ]
   (...)
 })
