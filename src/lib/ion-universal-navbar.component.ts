@@ -48,7 +48,6 @@ export class IonUniversalNavbar {
     
     ngOnInit() {
         this.appendStyles()
-        this.hideModalOnBack()
     }
 
     hideModalOnBack() {

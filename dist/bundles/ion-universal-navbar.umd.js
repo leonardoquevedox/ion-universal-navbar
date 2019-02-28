@@ -34,7 +34,6 @@
          */
             function () {
                 this.appendStyles();
-                this.hideModalOnBack();
             };
         /**
          * @return {?}

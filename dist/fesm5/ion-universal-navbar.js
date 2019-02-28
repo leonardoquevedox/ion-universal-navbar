@@ -33,7 +33,6 @@ var IonUniversalNavbar = /** @class */ (function () {
      */
     function () {
         this.appendStyles();
-        this.hideModalOnBack();
     };
     /**
      * @return {?}
