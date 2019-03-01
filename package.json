@@ -1,6 +1,6 @@
 {
   "name": "ion-universal-navbar",
-  "version": "1.0.0-rc19",
+  "version": "1.0.0-rc20",
   "description": "Simple authentication state handler for Angular.io.",
   "main": "index.js",
   "scripts": {
